@@ -47,24 +47,6 @@
   display: none;
 }
 
-@media (max-width: 575px) {
-  .amazon-logo {
-    display: none;
-  }
-
-  .amazon-mobile-logo {
-    display: block;
-    height: 35px;
-    margin-top: 5px;
-  }
-  .search-bar{
-    height: 32px;
-  }
-  .search-button{
-    height: 43px;
-  }
-}
-
   .amazon-header-middle-section {
     flex: 1;
     max-width: 850px;
@@ -154,4 +136,21 @@
     text-align: center;
   }
 
+  @media (max-width: 575px) {
+    .amazon-logo {
+      display: none;
+    }
+  
+    .amazon-mobile-logo {
+      display: block;
+      height: 35px;
+      margin-top: 5px;
+    }
+    .search-bar{
+      height: 32px;
+    }
+    .search-button{
+      height: 43px;
+    }
+  }
  
