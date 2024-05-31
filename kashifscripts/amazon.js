@@ -1,5 +1,5 @@
-import {cart, addToCart} from './cart.js';
-import {products} from './products.js';
+import { cart, addToCart } from '../data/cart.js';
+import { products } from '../data/products.js';
 import { formatCurrency } from './utilis/money.js';
 
 let productsHTML = '';
@@ -65,12 +65,12 @@ function updateCartQuantity() {
   document.querySelector('.js-cart-quantity').innerHTML = cartQuantity;
 }
 
+
 document.querySelectorAll('.js-add-to-cart').forEach((button) => {
   button.addEventListener('click', () => {
     const productId = button.dataset.productId;
     addToCart(productId);
     updateCartQuantity();
-
   });
 });
 
