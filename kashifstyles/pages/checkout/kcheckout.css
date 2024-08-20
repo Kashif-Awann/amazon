@@ -183,3 +183,19 @@
   margin-bottom: 15px;
 }
 
+/* New module, add or remove number of quantity buttons */
+.quantity-buttons {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.quantity-buttons button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.3rem;
+  background: white;
+  border: 1px solid;
+  border-radius: 3px;
+}
